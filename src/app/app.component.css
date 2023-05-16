@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Gilroy-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'Merryweather';
+  src: url('../assets/fonts/Merriweather-Black.ttf');
+}
+
+body {
+  background-color: #191411;
+  font-family: 'Gilroy', sans-serif;
+  color: #ffffff;
+}
+
+.header {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section__title {
+  font-family: 'Merryweather', sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+
+/* HEADER */
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  vertical-align: bottom;
+}
+
+.menu {
+  margin-left: 191px;
+
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 88px;
+}
+
+.menu__item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu__item a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.menu__currency {
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
+  padding: 6px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: auto;
+  user-select: none;
+  line-height: 32px;
+}
+
+
+/* MAIN */
+.main {
+  background-image: url("../assets/images/main_bg.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.main__content {
+  padding: 103px 0 199px;
+}
+
+.main__content .container {
+  position: relative;
+}
+
+.main__info {
+  max-width: 608px;
+  z-index: 2;
+}
+
+.main__small-info {
+  display: inline-block;
+  background: #D3320F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  padding: 12px 16px;
+}
+
+.main__header {
+  font-family: 'Merryweather', serif;
+  font-size: 120px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.main__text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 56px;
+}
+
+.main__image {
+  position: absolute;
+  top: -123px;
+  left: calc(100% - 991px);
+  z-index: 1;
+}
+
+/* раздед WHY */
+.main__why {
+  background-image: url('../assets/images/whybg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen (min-resolution: 2dppx) {
+      background-image: url('../assets/images/whybg@2x.png');
+  }
+
+  padding-bottom: 180px;
+}
+
+
+
+.why__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.why__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why__item-image {
+  margin-bottom: 24px;
+}
+
+.why__item-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.why__item-text {
+  text-align: center;
+}
+
+
+/* PRODUCTS */
+
+.products {
+  background-image: url("/images/burgers_bg.png");
+  background-repeat:repeat-y;
+  background-position: top center;
+  background-size: 1400px;
+  padding-bottom: 180px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.products__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  background: #211A16;
+
+  border: 1px solid #353535;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.products__item-image {
+  margin: 0 auto;
+  max-width: 354px;
+  max-height: 280px;
+}
+
+.products__item-title {
+  padding: 24px 0;
+  font-size: 24px;
+  line-height: 29px;
+  justify-self: flex-start;
+}
+
+.products__item-description {
+
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 24px;
+}
+
+.products__item-extra {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.products__item-info {
+  margin-right: auto;
+}
+
+.products__item-price {
+  margin-bottom: 8px;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.products__item-weight {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #757575;
+
+}
+
+.product__order {
+  position: relative;
+  width: 182px;
+}
+
+.order__button-text {
+  padding: 20px 69px 20px 35px;
+}
+
+.order__button-text::before {
+  position: absolute;
+  top: 21;
+  right: 38px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url('../assets/images/icons/cart.svg');
+  background-repeat: no-repeat;
+}
+
+
+
+/* ORDER */
+
+
+.order {
+  background-image: url('../assets/images/order_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen (min-resolution: 2dppx) {
+      background-image: url('../assets/images/order_bg@2x.png');
+  }
+
+  padding-bottom: 180px;
+  overflow: hidden;
+}
+
+.order .container {
+  position: relative;
+}
+
+.order__image {
+  position: absolute;
+  top: 0;
+  right: calc(100% - 764px);
+  z-index: -1;
+}
+
+.order__form--wrapper {
+  margin-top: 60px;
+  margin-left: 674px;
+  background: #211A16;
+  border: 1px solid #353535;
+  border-radius: 16px;
+  padding: 60px 40px;
+  max-width: 424px;
+  box-sizing: border-box;
+
+}
+
+.order__form-title {
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.order__form {
+      display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.order__form-input {
+  background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+  width: 344px;
+  height: 62px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.order__form-input.error {
+  background: red;
+}
+
+.order__form-input input {
+  box-sizing: border-box;
+  width: 342px;
+  height: 60px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 140%;
+  padding: 20px 10px;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 8px;
+  background-color: #211A16;
+}
+
+.order__form-button {
+  width: 100%;
+}
+
+
+/* FOOTER */
+.footer__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+
+}
+
+.rights {
+  margin-left: auto;
+  font-size: 16px;
+line-height: 20px;
+color: #ffffff;
+}
